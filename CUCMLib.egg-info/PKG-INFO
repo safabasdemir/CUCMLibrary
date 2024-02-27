@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: CUCMLib
+Version: 0.1.0
+Summary: CUCM ile etkileşim için bir kütüphane
+Author: SafaBasdemir
+Author-email: safabasdemir@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CUCMLib
+
+CUCM ile etkileÅŸim iÃ§in bir kÃ¼tÃ¼phane
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install CUCMLib.
+
+```bash
+pip install CUCMLib
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

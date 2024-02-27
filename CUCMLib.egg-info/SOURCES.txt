@@ -1,0 +1,10 @@
+README.md
+setup.py
+CUCMLib/__init__.py
+CUCMLib/partition.py
+CUCMLib/phone.py
+CUCMLib.egg-info/PKG-INFO
+CUCMLib.egg-info/SOURCES.txt
+CUCMLib.egg-info/dependency_links.txt
+CUCMLib.egg-info/not-zip-safe
+CUCMLib.egg-info/top_level.txt
