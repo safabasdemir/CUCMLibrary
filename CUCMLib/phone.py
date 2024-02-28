@@ -38,16 +38,20 @@ def show_history() :
 
 ###################################################################################################################################
 
-def phoneHelp():
+def Help():
     print("""
           
           Bu kütüphane ile telefon ile ilgili geliştirmeler yapılabilmektedir.
           
-          listPhone() -> Bu fonksiyon ile Call Manager'a kayıtlı telefonları listelemektedir. Deaylı bilgi için listPhoneHelp() komutunu çağırınız.
+          listPhone() -> Bu fonksiyon ile Call Manager'a kayıtlı cihazları consol ekranına listelemektedir. Deaylı bilgi için listPhoneHelp() fonksiyonunu çağırınız.
           
-          addPhone -> Bu fonksiyon ile Call Manager'a yeni telefon eklemek için kullanılmaktadır. Deaylı bilgi için addPhoneHelp() komutunu çağırınız.
+          listPhoneCsv() -> Bu fonksiyon ile Call Manager'a kayıtlı telefonları CVS formatında fonksiyonun çağırıldığı klasöre kaydetmektedir. Detaylı bilgi için listPhoneCsvHelp() fonksiyonunu çağırınız.
           
-          deletePhone -> Bu fonksiyon ile Call Manager'da bulunan telefonu silmek için kullanılmaktadır. Deaylı bilgi için deletePhoneHelp() komutunu çağırınız.
+          addPhoneExcel() -> Bu fonksiyon ile Call Manager'a yeni cihaz eklemek için kullanılmaktadır. Deaylı bilgi için addPhoneHelp() fonksiyonunu çağırınız.
+          
+          removePhoneExcel() -> Bu fonksiyon ile Call Manager'da bulunan telefonu silmek için kullanılmaktadır. Deaylı bilgi için removePhoneExcelHelp() fonksiyonunu çağırınız.
+          
+          updatePhoneExcel() -> Bu fonksiyon ile Call Manager'a kayıtlı cihazları update etmek için kullanılmaktadır. Deaylı bilgi için updatePhoneExcelHelp() fonksiyonunu çağırınız.
           
           
           """  
@@ -85,7 +89,7 @@ def listPhone():
 
 def listPhoneHelp():
     print("""
-          Bu fonksiyon çağırıldığında Call Manager üzeride bulunan telefonları listemektedir. Fakat telefon üzerinde bulunan bütün özellikleri listelememektedir.
+          Bu fonksiyon çağırıldığında Call Manager üzeride bulunan cihazları consol ekranında listemektedir. Fakat cihaz üzerinde bulunan bütün özellikleri listelememektedir.
         
           Liste sırasında verilecek olan bilgiler:
           
@@ -130,7 +134,7 @@ def listPhoneCsv():
 
 def listPhoneCsvHelp():
     print("""
-    Bu kütüphane ile CUCM'da bulunan cihazların bilgilerini, bulunduğu klasöre CSV formatında kaydetmektedir.
+    Bu kütüphane ile CUCM'da bulunan cihazların bilgilerini, fonksiyonun çağırıldığı klasöre CSV formatında kaydetmektedir.
     
     Kaydedilen bilgiler : Name  -  Description  -  CSS  -  Directory Number  -  Partition
           
@@ -207,7 +211,7 @@ def addPhoneExcelHelp():
         
         NOTLAR:
         
-            1 - CUCM üzerinede daha önce oluşturulmamış PARTİTİON veya CSS'i Excel dosyası üzerine yazarak CUCM'a yüklenmek istenirse hata verecektir.
+            1 - CUCM üzerinede daha önce oluşturulmamış PARTITION veya CSS'i Excel dosyası üzerine yazarak CUCM'a yüklenmek istenirse hata verecektir.
                 Örneğin, bu hata daha önce yüklenmemiş olan CSS'i 5. satırda bulunan cihaza yazdınız ve dosyayı kaydedip kapattınız. Excel üzerinde bulunan
                 ilk 4 satırdaki cihazlar eklenecektir fakat 5. satırda hata mesajı verecektir ve 5. satır ve sonraki satırları eklemeycektir. Tekrar bu 
                 fonksiyonu çağırmak istediğinizde ilk 4 satırda bulunan cihazları eklediği için, hata mesajı verecektir. Bu mesajın içeriği aynı isimde
@@ -311,7 +315,7 @@ def removePhoneExcel():
         )
         i = i + 1
 
-def removePhoneHelp():
+def removePhoneExcelHelp():
     print("""
         Bu  fonksiyon ile CUCM'da bulunan cihazları silmektedir. Silinmesi istenen cihazların bilgilerini removePhoneList.xlsx olarak kayıt edilmesi gerekmektedir.
         
